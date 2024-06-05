@@ -1,0 +1,42 @@
+/* Styles for PC screens */
+.mobile-menu-icon {
+    display: none;
+  }
+  
+  /* Styles for mobile and tablets */
+  @media (max-width: 767px) {
+    .mobile-menu-icon {
+      display: block; /* or any other display property you want */
+    }
+  }
+  
+  .email-link, .chat-link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the mobile image by default */
+.mobile-image {
+  display: none;
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  /* Hide the desktop image on mobile */
+  .desktop-image {
+      display: none;
+  }
+
+  /* Show the mobile image on mobile */
+  .mobile-image {
+      display: block;
+  }
+}
+
+
+
+
+
+
+
+
