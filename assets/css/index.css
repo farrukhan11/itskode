@@ -1,140 +1,134 @@
- 
- /* Brand Slider Section */  
-
-
-.brandSlider{
-  margin-bottom: 40px;
+body {
+  overflow-x: hidden;
 }
 
+
+.brandSlider {
+  margin-bottom: 20px;
+  padding-bottom: 28px;
+  padding-top: 20px;
+  position: relative;
+  
+}
+
+.text1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+ margin: 0 15px 0 15px;
+}
+
+.brandSlider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px; 
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.802), transparent); 
+  z-index: 1;
+}
+.brandSlider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px; 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.802), transparent); 
+  z-index: 1; 
+}
+
+
+
+.brandSlider::before {
+  left: 0px; 
+}
+
+.brandSlider::after {
+  right: 0px;
+}
+.marquee-container {
+  overflow: hidden; 
+  position: relative;
+  width: 100%;
+ 
+}
 
 .marquee {
-  margin: 4em;
+  display: flex;
+  gap: 2px;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
 }
 
-@media only screen and (min-width: 120px) {
-  .marquee {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 6s linear infinite;
-  }
+.marquee::before, .marquee::after {
+  content: "";
+  display: block;
+}
 
-  .marquee1 {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 6s linear infinite reverse;
-  }
+.marquee::after{
+  content: attr(data-duplicate); 
+}
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+.marquee {
+  padding: 20px;
+  animation-direction: normal;
 }
 
 
-@media only screen and (min-width: 767px) {
-  .marquee {
-    gap: 5px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite;
-  }
 
-  .marquee1 {
-    gap: 5px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite reverse;
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
   }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  .marquee {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite;
-  }
-
-  .marquee1 {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite reverse;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-}
-@media only screen and (min-width: 360px) {
-  .marquee {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite;
-  }
-
-  .marquee1 {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite reverse;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-}
-@media only screen and (max-width: 4360px) {
-  .marquee {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite;
-  }
-
-  .marquee1 {
-    gap: 2px;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 36s linear infinite reverse;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 .img1 {
-  margin-left: 6em;
+  margin-left: 3em;
+
 }
+
+
+@media only screen and (min-width: 767px) {
+  .marquee{
+    gap: 5px;
+  }
+}
+
+.dash {
+font-weight:700;
+font-size: xx-large;
+color: rgb(93, 93, 93);
+}
+
+
+
+
+/* Light mode */
+body.light-mode .brandSlider {
+  background-color: #fff;
+}
+
+body.light-mode .brandSlider .text1 .dash {
+  color: rgb(93, 93, 93);
+}
+
+/* Dark mode */
+body.dark-mode .brandSlider {
+  background-color: rgb(30, 30, 30);
+}
+
+body.dark-mode .brandSlider .text1 .dash {
+  color: white;
+}
+
+
+
+
+
