@@ -31,6 +31,21 @@
   .mobile-image {
       display: block;
   }
+  .black-friday-img-1 {
+    width: 80%;
+    margin: auto;
+  }
+  .black-friday-img-2{
+    width: 80%;
+    margin: auto;
+  }
+  /* .black-friday-btn-red{
+    width: 80%;
+    margin: auto;
+  } */
+  /* .iframe-width{
+    width: 70%;
+  } */
 }
 
 
