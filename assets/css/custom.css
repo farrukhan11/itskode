@@ -36,6 +36,11 @@
     display: block;
   }
 
+  .offer-badge {
+    width: 100% !important;
+  }
+
+
   .black-friday-img-1 {
     width: 80%;
     margin: auto;
