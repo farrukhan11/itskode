@@ -31229,7 +31229,7 @@ body {
 
 .logo-black {
   display: block;
-  width: 260px;
+  width: 180px;
 
 }
 
@@ -39595,6 +39595,7 @@ body.theme-dark {
 
 .theme-dark .logo-white {
   display: block;
+  width: 180px;
 }
 
 .theme-dark .header-gradient {
