@@ -28741,7 +28741,7 @@ screen and (max-height: 300px) {
   .pt-100 {
     padding-top: 65px;
   }
-  
+
 }
 
 .pt-105 {
@@ -29410,7 +29410,7 @@ button:focus {
 }
 
 .nav-wrapper ul li.has-submenu::after {
-  content: "";
+  content: "\f078";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -31993,7 +31993,7 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .feature-last-div{
+  .feature-last-div {
     padding-bottom: 50px;
   }
 }
@@ -40499,12 +40499,15 @@ body.theme-dark {
     opacity: 1;
   }
 }
+
 .fiver-div {
   outline: 3px solid gray;
 }
+
 .upwork-div {
   outline: 3px solid #63d535;
 }
+
 .btn-container {
   position: relative;
 }
