@@ -86,9 +86,6 @@
     <!--body overlay -->
     <div class="body-overlay"></div>
 
-    <!--scrolltop button -->
-    <button class="scrolltop-btn"><i class="fa-solid fa-angle-up"></i></button>
-
     <!--preloader start-->
     <div class="loader-wrap">
       <div class="preloader">
@@ -334,7 +331,7 @@
                 </li>
               </ul>
               <a
-                href="#"
+                href="#pricing"
                 class="link d-inline-block font-weight-bold padding-y-4 padding-x-10 rounded bg-warning text-dark"
               >
                 View Pricing
@@ -343,11 +340,6 @@
             <div class="col-lg-6 col-xxl-7">
               <div class="gb-hero__img text-center">
                 <img src="assets/img/50off.png" alt="image" class="img-fluid" />
-                <img
-                  src="assets/img/hostim/hero-splash.png"
-                  alt="image"
-                  class="gb-hero__img-bg"
-                />
               </div>
             </div>
           </div>
@@ -374,7 +366,7 @@
               <div
                 class="pricing-card padding-x-4 padding-x-md-8 padding-y-6 padding-y-md-10 rounded-2"
               >
-                <div class="">
+                <div class="" id="pricing">
                   <img
                     src="assets/img/canva-logo.png"
                     alt="image"
@@ -409,10 +401,11 @@
                   Monthly Plan (70% savings)
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0)"
                   class="pricing-card__btn link d-flex justify-content-center w-100 text-center border border-stroke rounded margin-bottom-8 padding-y-4 padding-x-6 heading-font font-weight-bold clr-text-light :clr-text :bgc-yellow"
+                  onclick="$crisp.push(['do', 'chat:open'])"
                 >
-                  Buy Now
+                  Chat with Us
                 </a>
                 <ul class="list list-disc gap-3">
                   <li class="clr-text-light">Unlimited Features</li>
@@ -460,10 +453,11 @@
                   Monthly Plan (75% savings)
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0)"
                   class="pricing-card__btn link d-flex justify-content-center w-100 text-center border border-stroke rounded margin-bottom-8 padding-y-4 padding-x-6 heading-font font-weight-bold clr-text-light :clr-text :bgc-yellow"
+                  onclick="$crisp.push(['do', 'chat:open'])"
                 >
-                  Buy Now
+                  Chat with Us
                 </a>
                 <ul class="list list-disc gap-3">
                   <li class="clr-text-light">Unlimited Features</li>
@@ -511,10 +505,11 @@
                   Monthly Plan (73% savings)
                 </p>
                 <a
-                  href="#"
+                  href="javascript:void(0)"
                   class="pricing-card__btn link d-flex justify-content-center w-100 text-center border border-stroke rounded margin-bottom-8 padding-y-4 padding-x-6 heading-font font-weight-bold clr-text-light :clr-text :bgc-yellow"
+                  onclick="$crisp.push(['do', 'chat:open'])"
                 >
-                  Buy Now
+                  Chat with Us
                 </a>
                 <ul class="list list-disc gap-3">
                   <li class="clr-text-light">Unlimited Features</li>
@@ -1437,7 +1432,8 @@
     <script src="assets/js/vendors/isotop.pkgd.min.js"></script>
     <script src="assets/js/vendors/countdown.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="/assets/js/vendors/countdown.min.js"></script>
+    <script src="/assets/js/chat.js"></script>
+
     <!--endbuild-->
   </body>
 
